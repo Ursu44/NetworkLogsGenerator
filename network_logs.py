@@ -48,7 +48,6 @@ def dns_log(malicious=False):
         f"query: {domain} IN A"
     )
 
-
 def ids_log(malicious=False):
     alerts = [
         ("ET SCAN Possible Nmap Scan",              3),
@@ -75,7 +74,6 @@ def ids_log(malicious=False):
         f"{external_ip()}:443 established"
     )
 
-
 def routing_log(malicious=False):
     messages_good = [
         "Route update successful",
@@ -90,7 +88,6 @@ def routing_log(malicious=False):
         f"{syslog_timestamp()} {hostname()} routerd: "
         f"{random.choice(messages_bad if malicious else messages_good)}"
     )
-
 
 def generate():
     # ── is_attack_wave() în loc de GOOD_RATIO ────────────────────
