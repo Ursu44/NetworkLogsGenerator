@@ -2,7 +2,6 @@ from datetime import datetime, timezone
 import random
 import time
 
-# ── Attack Wave State ─────────────────────────────────────────────
 _attack_state = {
     "in_attack":   False,
     "attack_end":  0.0,

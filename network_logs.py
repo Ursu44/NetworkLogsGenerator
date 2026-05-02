@@ -5,7 +5,6 @@ from utils import (
     is_attack_wave
 )
 
-
 def firewall_log(malicious=False):
     protocols = ["TCP", "UDP"]
 
